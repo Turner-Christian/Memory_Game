@@ -3,23 +3,27 @@
     margin: 0 auto;
 }
 
-img {
+.image {
     width: 200px;
     height: 200px;
-    padding: 1rem;
     cursor: pointer;
-}
-
-img:hover {
-    transform: scale(.99);
-    opacity: .80;
-}
-
-.body {
     border: solid;
+}
+
+.image:hover {
+    scale: .99;
+}
+
+.image:active {
+    transform: scale(.99);
+}
+
+.grid {
     display: flex;
-    flex-wrap: nowrap;
-    margin: 0 auto;
-    justify-content: space-evenly;
     flex-wrap: wrap;
+    flex-direction: column;
+    height: 600px;
+    gap: 10px;
+    max-height: calc(6 * 100px + 5 * 10px);
+    border: solid;
 }
