@@ -1,0 +1,25 @@
+* {
+    background-color: rgb(35, 38, 48);
+    margin: 0 auto;
+}
+
+img {
+    width: 200px;
+    height: 200px;
+    padding: 1rem;
+    cursor: pointer;
+}
+
+img:hover {
+    transform: scale(.99);
+    opacity: .80;
+}
+
+.body {
+    border: solid;
+    display: flex;
+    flex-wrap: nowrap;
+    margin: 0 auto;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
