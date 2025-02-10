@@ -23,11 +23,11 @@ const MemoryGame = ({ images }) => {
       {shuffledImages.map((image, index) => (
         <div className="card">
           <img
-            onClick={() => matchingCards(image, index)}
+            onClick={() => (matchingCards(image, index), setImgFlipped(index))}
             key={index}
-            className="image"
+            className={"image"}
             src={image}
-            // alt={`image index ${index}`}
+            alt={`image index ${index}`}
           />
         </div>
       ))}
